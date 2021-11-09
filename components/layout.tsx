@@ -5,7 +5,13 @@ import Link from 'next/link';
 const name = 'Ishaq Ibrahim';
 export const siteTitle = "Ishaq's Next.js sample";
 
-export default function Layout({ children, home }) {
+export default function Layout({
+  children,
+  home,
+}: {
+  children: React.ReactNode;
+  home?: boolean;
+}) {
   return (
     <div className="container mx-auto flex flex-col items-center">
       <Head>
